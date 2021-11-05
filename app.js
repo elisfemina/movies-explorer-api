@@ -14,9 +14,6 @@ const app = express();
 
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
 });
 
 mongoose.connection.on('connected', () => {
